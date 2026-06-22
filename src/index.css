@@ -1,0 +1,122 @@
+/* ==== CSS RESET / BASE ==== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f5f5f5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Improve text wrapping */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*====== COLORS =======*/
+
+:root {
+  --color-primary: #121212; /* BASE */
+  --color-secondary: #16262e; /* SUPPORT */
+  --color-tertiary: #f4f4f2; /* CTA */
+  --color-neutral: #37474f; /* TEXT */
+  --color-button: #00b8db; /* DETAILS */
+
+  /*===text====*/
+  --fs-p-min: 0.95rem;
+  --fs-p-max: 1.15rem;
+  /* vw + 0.25rem*/
+
+  /*===== Títulos==== */
+  --fs-h3-min: 1.1rem;
+  --fs-h3-max: 1.4rem;
+
+  --fs-h2-min: 1.4rem;
+  --fs-h2-max: 2rem;
+
+  --fs-h1-min: 2rem;
+  --fs-h1-max: 3.2rem;
+
+  /*======Font-family=====*/
+  --font-title: "Manrope", serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "inter", cursive;
+
+  /*===== Espaçamentos==== */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+}
+
+/*===font=====*/
+
+/*
+Uso	                  Unidade	    Valores seguros
+Hero height	          vh	            50–70vh
+Section padding	      vh	            6–12vh
+Card  width	          vw	            20–30vw
+Card  height	        vw	            18–25vw
+Ícones                vw	            10–15vw
+Texto	                vw	            2–5vw (com clamp)*/

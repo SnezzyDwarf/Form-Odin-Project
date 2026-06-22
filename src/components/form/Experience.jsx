@@ -1,36 +1,39 @@
-export default function Experience({
-  handleFinished,
-  value,
-  onChange,
-  OnClick,
-}) {
+//css
+import "../../assets/styles/Experience.css";
+
+export default function Experience({ value, onChange }) {
   return (
     <>
-      <div>
-        <div>
-          <label htmlFor="">Begin: </label>
-          <input
-            value={value.beginExperience}
-            onChange={(e) => onChange("beginExperience", e.target.value)}
-          />
-          <label htmlFor="">End: </label>
-          <input
-            value={value.endExperience}
-            onChange={(e) => onChange("endExperience", e.target.value)}
-          />
+      <section className="experience_form-section">
+        <div className="experience_form-content">
+          <div className="experience_form-content_title">
+            <h3>Experience</h3>
+          </div>
+          <div className="experience_form-content_inputs">
+            <div className="experience_form-content_inputs-date">
+              <label htmlFor="">Begin: </label>
+              <input
+                type="date"
+                value={value.beginExperience}
+                onChange={(e) => onChange("beginExperience", e.target.value)}
+              />
+              <label htmlFor="">End: </label>
+              <input
+                type="date"
+                value={value.endExperience}
+                onChange={(e) => onChange("endExperience", e.target.value)}
+              />
+            </div>
+            <div className="experience_form-content_inputs-textarea">
+              <label htmlFor="">Short description of your experience: </label>
+              <textarea
+                value={value.description}
+                onChange={(e) => onChange("description", e.target.value)}
+              ></textarea>
+            </div>
+          </div>
         </div>
-        <div>
-          <label htmlFor="">Short description of your experience: </label>
-          <textarea
-            value={value.description}
-            onChange={(e) => onChange("description", e.target.value)}
-          ></textarea>
-        </div>
-        <div>
-          <button onClick={handleFinished}>Finished</button>
-          <button onClick={OnClick}>Go Back</button>
-        </div>
-      </div>
+      </section>
     </>
   );
 }

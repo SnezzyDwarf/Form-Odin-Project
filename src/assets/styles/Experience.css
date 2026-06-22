@@ -1,0 +1,49 @@
+.experience_form-section {
+  width: 100%;
+  min-height: auto;
+}
+
+.experience_form-content {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.experience_form-content_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding: var(--space-sm);
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.experience_form-content_inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background-color: var(--color-tertiary);
+}
+
+.experience_form-content_inputs-date,
+.experience_form-content_inputs-textarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: var(--space-xs);
+}
+
+.experience_form-content_inputs-date label,
+.experience_form-content_inputs-textarea label {
+  font-size: clamp(var(--fs-p-min), 1vw + 0.25rem, var(--fs-p-max));
+}

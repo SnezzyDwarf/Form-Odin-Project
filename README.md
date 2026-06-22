@@ -1,16 +1,40 @@
-# React + Vite
+# CV Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A CV/Resume Builder built with React, Vite, and CSS as part of The Odin Project curriculum.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Real-time CV updates while typing
+- Multiple input sections
+- Simple and user-friendly design
+- Reset form button _(WIP)_
+- Customization options _(WIP)_
+  - Colors
+  - Fonts
+  - Layout positioning
 
-## React Compiler
+- Add multiple entries _(WIP)_
+  - Work Experience
+  - Education
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Social/Profile links _(WIP)_
+- Profile image upload _(WIP)_
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- CSS
+
+## Project Status
+
+WIP
+
+### Planned Features
+
+- Reset button
+- CV style customization
+- Multiple work experience entries
+- Multiple education entries
+- Social/profile links
+- Image upload

@@ -2,16 +2,21 @@ import { useState } from "react";
 import NameForm from "./NameForm";
 import Educational from "./Educational";
 import Experience from "./Experience";
+import Result from "./result";
+
+//css
+import "../../assets/styles/Cv.css";
 
 export default function Form() {
-  const [step, setStep] = useState("NameForm");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    email: "",
     school: "",
     beginExperience: "",
     endExperience: "",
     description: "",
+    phone: "",
   });
 
   function HandleChange(field, value) {
@@ -21,68 +26,43 @@ export default function Form() {
     }));
   }
 
-  function HandleEducation() {
-    setStep("EducationForm");
-  }
-
-  function HandleExperience() {
-    setStep("Experience");
-  }
-
-  function HandleFinished() {
-    setStep("finished");
-  }
   return (
     <>
-      {step === "NameForm" && (
-        <NameForm
-          HandleEducation={HandleEducation}
-          handleFinished={HandleFinished}
-          value={{ firstName: formData.firstName, lastName: formData.lastName }}
-          onChange={HandleChange}
-        />
-      )}
-      {step === "EducationForm" && (
-        <Educational
-          handleExperience={HandleExperience}
-          handleFinished={HandleFinished}
-          onClick={() => setStep("NameForm")}
-          value={{ school: formData.school }}
-          onChange={HandleChange}
-        />
-      )}
-      {step === "Experience" && (
-        <Experience
-          handleFinished={HandleFinished}
-          value={{
-            beginExperience: formData.beginExperience,
-            endExperience: formData.endExperience,
-            description: formData.description,
-          }}
-          onChange={HandleChange}
-          OnClick={() => setStep("EducationForm")}
-        />
-      )}
-      {step === "finished" && (
-        <div>
-          <h1>Review Form</h1>
-          <div>
-            <p>Full Name: {formData.firstName + " " + formData.lastName} </p>
-            <button onClick={() => setStep("NameForm")}>Edit</button>
+      <section className="cv_section">
+        <div className="cv_content">
+          <div className="cv_rigth">
+            <div>
+              <NameForm
+                value={{
+                  firstName: formData.firstName,
+                  lastName: formData.lastName,
+                }}
+                onChange={HandleChange}
+              />
+            </div>
+
+            <div>
+              <Experience
+                value={{
+                  beginExperience: formData.beginExperience,
+                  endExperience: formData.endExperience,
+                  description: formData.description,
+                }}
+                onChange={HandleChange}
+              />
+            </div>
+            <div>
+              <Educational
+                value={{ school: formData.school }}
+                onChange={HandleChange}
+              />
+            </div>
           </div>
-          <div>
-            <p>Your School name was: {formData.school}</p>
-            <button onClick={() => setStep("EducationForm")}>Edit</button>
-          </div>
-          <div>
-            <p>Experience: </p>
-            <p>Begin: {formData.beginExperience}</p>
-            <p>End: {formData.endExperience}</p>
-            <p>{formData.description}</p>
-            <button onClick={() => setStep("EducationForm")}>Edit</button>
+          <div className="cv_left">
+            <Result data={formData} />
           </div>
         </div>
-      )}
+      </section>
     </>
   );
 }

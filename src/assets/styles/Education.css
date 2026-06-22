@@ -1,0 +1,39 @@
+.educational_form-section {
+  width: 100%;
+  min-height: auto;
+}
+
+.educational_form-content {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.educational_form-content_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding: var(--space-sm);
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.educational_form-content_inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background-color: var(--color-tertiary);
+}
+
+.educational_form-content_inputs label {
+  font-size: clamp(var(--fs-p-min), 1vw + 0.25rem, var(--fs-p-max));
+}

@@ -1,0 +1,24 @@
+.cv_section {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.cv_content {
+  width: 100%;
+  height: 100dvh;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 3rem;
+  display: flex;
+}
+.cv_rigth {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: var(--space-md);
+}
+
+.cv_left {
+  display: flex;
+  flex: 8;
+}

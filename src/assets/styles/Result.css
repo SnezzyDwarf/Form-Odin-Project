@@ -1,0 +1,103 @@
+.cv_result-section {
+  width: 100%;
+  min-height: auto;
+  background-color: var(--color-tertiary);
+  border: 2px solid var(--color-secondary);
+}
+
+.cv_result-content {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: var(--space-lg);
+}
+
+.cv_result-content_body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+}
+
+.cv_result-content_personal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  background-color: #3c7a89;
+  gap: var(--space-md);
+  border-radius: 22px 22px 0 0;
+}
+
+.cv_result-content_personal-name {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.cv_result-content_personal-name h3 {
+  font-size: clamp(var(--fs-h3-min), 3vw + 0.5rem, var(--fs-h3-max));
+  color: white;
+}
+
+.cv_result-content_personal-info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: var(--space-md);
+}
+
+.cv_result-content_personal-info p {
+  font-size: clamp(var(--fs-p-min), 1vw + 0.25rem, var(--fs-p-max));
+  color: white;
+}
+
+.cv_result-content_experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.cv_result-content_inputs-title {
+  width: 100%;
+  height: auto;
+  padding: var(--space-md);
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+}
+
+.cv_result-content_inputs-title h3 {
+  font-size: clamp(var(--fs-h3-min), 3vw + 0.5rem, var(--fs-h3-max));
+  color: white;
+}
+
+.cv_result-content_experience-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.cv_result-content_experience-inputs {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.cv_result-content_experience-textarea {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
