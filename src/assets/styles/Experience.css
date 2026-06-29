@@ -23,6 +23,19 @@
   width: 100%;
   background-color: var(--color-primary);
   color: white;
+  gap: var(--space-md);
+}
+
+.experience_form-content_title button {
+  border-radius: 12px;
+  background-color: #69863f;
+  padding: var(--space-xs) var(--space-md);
+  color: white;
+  display: flex;
+  gap: var(--space-md);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .experience_form-content_inputs {

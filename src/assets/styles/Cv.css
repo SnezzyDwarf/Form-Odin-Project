@@ -3,6 +3,29 @@
   min-height: 100dvh;
 }
 
+.cv_reset {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: var(--space-md);
+  padding: 1rem;
+}
+
+.cv_reset button {
+  background-color: var(--color-tertiary);
+  border: 3px solid var(--color-primary);
+  border-radius: 8px;
+  padding: var(--space-xs);
+  align-items: center;
+}
+
+.cv_reset button:hover {
+  border: 3px solid var(--color-secondary);
+
+  background-color: beige;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .cv_content {
   width: 100%;
   height: 100dvh;

@@ -7,7 +7,8 @@ A CV/Resume Builder built with React, Vite, and CSS as part of The Odin Project 
 - Real-time CV updates while typing
 - Multiple input sections
 - Simple and user-friendly design
-- Reset form button _(WIP)_
+- Reset form button
+  -Add Download pdf Cv
 - Customization options _(WIP)_
   - Colors
   - Fonts
@@ -34,6 +35,7 @@ WIP
 
 - Reset button
 - CV style customization
+  -Download CV pdf
 - Multiple work experience entries
 - Multiple education entries
 - Social/profile links
